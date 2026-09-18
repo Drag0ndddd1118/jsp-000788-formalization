@@ -12,7 +12,7 @@ Under a finite coloring of the positive integers, can the specified sparse seque
 Erdős and Galvin asked whether for every growth rate $f : \mathbb{N} \to \mathbb{N}$ and every finite coloring of $\mathbb{N}$ (or $\mathbb{Z}$), there exists a sequence $a_n$ with $a_n < f(n)$ infinitely often such that the set of finite sums $\mathrm{FS}(a)$ omits at least one color.
 
 ### Resolution
-Disproved (negative answer) by Lisa Price and GPT-5.5 Pro:
+Disproved (negative answer) by Liam Price and GPT-5.5 Pro:
 - Constructed explicit counterexample colourings showing that no such pair $(f, k)$ exists.
 
 ## Formalization Details
@@ -50,6 +50,6 @@ lake build
 ```
 
 ## Attribution & Provenance
-- **Mathematical Solution:** Lisa Price and GPT-5.5 Pro (negative answer).
+- **Mathematical Solution:** Liam Price and GPT-5.5 Pro (negative answer).
 - **Formal Authors:** Codex, GPT-5.6 Sol, with upstream formalization in `plby/lean-proofs` (`src/latest/ErdosProblems/Erdos948.lean`).
 - **Packaging & Verification:** Maintained and verified by 赵钦 (Qin Zhao, GitHub: [@Drag0ndddd1118](https://github.com/Drag0ndddd1118)).
