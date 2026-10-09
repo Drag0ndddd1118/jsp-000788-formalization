@@ -1,0 +1,24 @@
+name: Lean Action CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: leanprover/lean-action@v1
+
+      # Trust policy, enforced: no `sorry`/`admit`/`axiom` in the submission, a
+      # type-checked bridge to the statement of record, and an axiom audit of the
+      # top-level result.
+      - name: Trust audit
+        run: python3 check.py
